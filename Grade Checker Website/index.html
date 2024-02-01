@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Grade Checker</title>
+  </head>
+  <body>
+    <div id="app">
+      <label for="language">Language/Bahasa:</label>
+      <select id="language" onchange="changeLanguage()">
+        <option value="en">English</option>
+        <option value="id">Indonesian</option>
+      </select>
+      <br />
+      <br />
+      <label for="numericGrade">Student grade:</label>
+      <input type="number" id="numericGrade" oninput="updateGrade()" />
+
+      <div id="output">
+        <p>
+          <span id="numericLabel">Numerical grade:</span>
+          <span id="numericResult"></span>
+        </p>
+        <p>
+          <span id="letterLabel">Letter grade:</span>
+          <span id="letterResult"></span>
+        </p>
+        <p>
+          <span id="evenOddLabel">Odd/Even:</span>
+          <span id="evenOddResult"></span>
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
